@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Change header background on scroll
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
-      nav.style.backgroundColor = "#222";
+      nav.style.backgroundColor = "pink";
     } else {
       nav.style.backgroundColor = "transparent";
     }
@@ -47,24 +47,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Form submission
 
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      const templateParams = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-      };
-
-      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams).then(
-        function (response) {
-          alert("Email sent successfully!");
-        },
-        function (error) {
-          alert("Failed to send email. Please try again later.");
-        }
-      );
-    });
+  document;
 });

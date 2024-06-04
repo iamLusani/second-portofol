@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #f1b5e2;
+  background-color: #6e02537a;
   color: rgb(252, 247, 247);
   padding: 10px 0;
   position: fixed;
@@ -35,7 +35,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f7dda6;
+  color: #fc72d2;
+  text-decoration: underline;
+  font-weight: 900;
 }
 
 section {
@@ -45,7 +47,12 @@ section {
   transition: opacity 0.6s ease, transform 0.6s ease;
   text-align: center;
 }
-
+.name-surname {
+  color: #f7bcbc;
+}
+#about {
+  text-align: left;
+}
 #about,
 #contact {
   background-color: #fde1e1;
@@ -56,8 +63,9 @@ section {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
+  font-size: 3em;
 }
 
 .gallery {
@@ -67,7 +75,7 @@ h1 {
 }
 
 .gallery-item {
-  width: calc(23.333% - 20px);
+  width: calc(17% - 15px);
   margin: 10px;
   overflow: hidden;
   position: relative;
@@ -84,7 +92,7 @@ h1 {
 .gallery-item-info {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: -10px;
   width: 100%;
   background: rgba(87, 56, 56, 0.7);
   color: white;
@@ -92,6 +100,7 @@ h1 {
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  font-size: 15px;
 }
 
 .gallery-item:hover .gallery-item-info {
@@ -126,7 +135,7 @@ h1 {
   margin-top: 20px;
   padding: 10px;
   border: none;
-  background-color: #423030;
+  background-color: #f5262696;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -134,7 +143,7 @@ h1 {
 }
 
 #contact-form button:hover {
-  background-color: #f8dda3;
+  background-color: #f79fe47e;
 }
 
 /* Lightbox */
@@ -184,12 +193,12 @@ h1 {
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(10px);
   }
 }
 
 .fade-in-up {
   opacity: 1;
-  transform: translateY(0);
-  animation: fadeInUp 0.6s ease forwards;
+  transform: translateY(10px);
+  animation: fadeInUp 0.9s ease forwards;
 }
